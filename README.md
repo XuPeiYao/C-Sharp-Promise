@@ -1,4 +1,4 @@
-# C-Sharp-Promise [![Build Status](https://travis-ci.org/Real-Serious-Games/C-Sharp-Promise.svg)](https://travis-ci.org/Real-Serious-Games/C-Sharp-Promise) #
+# C-Sharp-Promise [![xpy MyGet Build Status](https://www.myget.org/BuildSource/Badge/xpy?identifier=62be711f-5812-41e1-92ea-8a852e00ad21)](https://www.myget.org/) [![Build Status](https://travis-ci.org/XuPeiYao/C-Sharp-Promise.svg?branch=master)](https://travis-ci.org/XuPeiYao/C-Sharp-Promise) #
 
 <a href="https://promisesaplus.com/">
     <img src="https://promisesaplus.com/assets/logo-small.png" alt="Promises/A+ logo"
