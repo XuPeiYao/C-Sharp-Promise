@@ -7,6 +7,8 @@
 
 Promises library for C# for management of asynchronous operations. 
 
+This repository support **.NET Standard 2.0**.
+
 Inspired by Javascript promises, but slightly different.
 
 Used by [Real Serious Games](https://github.com/Real-Serious-Games/C-Sharp-Promise) for building serious games and simulations on Unity3d.
