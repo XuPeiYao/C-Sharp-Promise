@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace RSG
 {
@@ -16,6 +17,11 @@ namespace RSG
         /// Gets the id of the promise, useful for referencing the promise during runtime.
         /// </summary>
         int Id { get; }
+
+        /// <summary>
+        /// Gets the Task of the promise.
+        /// </summary>
+        Task<PromisedT> Task { get; }
 
         /// <summary>
         /// Set the name of the promise, useful for debugging.
@@ -205,10 +211,17 @@ namespace RSG
         private List<Action<PromisedT>> resolveCallbacks;
         private List<IRejectable> resolveRejectables;
 
+        private TaskCompletionSource<PromisedT> taskCompletionSource = new TaskCompletionSource<PromisedT>();
+
         /// <summary>
         /// ID of the promise, useful for debugging.
         /// </summary>
         public int Id { get; }
+
+        /// <summary>
+        /// Gets the Task of the promise.
+        /// </summary>
+        public Task<PromisedT> Task => taskCompletionSource.Task;
 
         /// <summary>
         /// Name of the promise, when set, useful for debugging.
@@ -361,6 +374,7 @@ namespace RSG
 
             rejectionException = ex;
             CurState = PromiseState.Rejected;
+            taskCompletionSource.TrySetException(ex);
 
             if (Promise.EnablePromiseTracking)
             {
@@ -382,6 +396,7 @@ namespace RSG
 
             resolveValue = value;
             CurState = PromiseState.Resolved;
+            taskCompletionSource.TrySetResult(value);
 
             if (Promise.EnablePromiseTracking)
             {

@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Xunit;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace RSG.Tests
 {
@@ -24,6 +26,20 @@ namespace RSG.Tests
                 });
 
             Assert.Equal(1, completed);
+        }
+
+        [Fact]
+        public async Task await_promiseAsync()
+        {
+            var promisedValue = 5;
+            var promise = new Promise<int>((res,rej)=> {
+                Thread.Sleep(1000);
+                res(10);
+            });
+
+            promisedValue = await promise.Task;
+
+            Assert.Equal(10, promisedValue);
         }
 
         [Fact]
