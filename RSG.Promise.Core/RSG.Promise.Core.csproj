@@ -4,8 +4,15 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>XuPeiYao</Authors>
-    <Description>Real-Serious-Games/C-Sharp-Promise 's .NET Standard 2.0 version. Promises library for C# for management of asynchronous operations.</Description>
+    <Description>forked from Real-Serious-Games/C-Sharp-Promise.
+This version support .NET Standard 2.0.
+Promises library for C# for management of asynchronous operations.</Description>
     <Copyright>MIT</Copyright>
+    <PackageProjectUrl>https://github.com/XuPeiYao/C-Sharp-Promise-Core</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/XuPeiYao/C-Sharp-Promise-Core</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Promise</PackageTags>
+    <PackageLicenseUrl>https://github.com/XuPeiYao/C-Sharp-Promise-Core/blob/master/LICENSE</PackageLicenseUrl>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
