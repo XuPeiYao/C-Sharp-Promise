@@ -1,4 +1,4 @@
-# C-Sharp-Promise [![xpy MyGet Build Status](https://www.myget.org/BuildSource/Badge/xpy?identifier=62be711f-5812-41e1-92ea-8a852e00ad21)](https://www.myget.org/) [![Build Status](https://travis-ci.org/XuPeiYao/C-Sharp-Promise.svg?branch=master)](https://travis-ci.org/XuPeiYao/C-Sharp-Promise) [![NuGet](https://img.shields.io/nuget/dt/RSG.Promise.Core.svg)]() [![NuGet](https://img.shields.io/nuget/v/RSG.Promise.Core.svg)]() #
+# C-Sharp-Promise [![xpy MyGet Build Status](https://www.myget.org/BuildSource/Badge/xpy?identifier=62be711f-5812-41e1-92ea-8a852e00ad21)](https://www.myget.org/) [![Build Status](https://travis-ci.org/XuPeiYao/C-Sharp-Promise.svg?branch=master)](https://travis-ci.org/XuPeiYao/C-Sharp-Promise) [![NuGet](https://img.shields.io/nuget/dt/RSG.Promise.Core.svg)](https://www.nuget.org/packages/RSG.Promise.Core) [![NuGet](https://img.shields.io/nuget/v/RSG.Promise.Core.svg)](https://www.nuget.org/packages/RSG.Promise.Core) #
 
 <a href="https://promisesaplus.com/">
     <img src="https://promisesaplus.com/assets/logo-small.png" alt="Promises/A+ logo"
