@@ -289,3 +289,5 @@ __pycache__/
 *.xsd.cs
 
 .vs/
+then.ico
+desktop.ini
