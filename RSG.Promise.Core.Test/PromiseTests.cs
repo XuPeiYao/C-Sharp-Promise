@@ -7,6 +7,7 @@ using Xunit;
 using System.Threading;
 using System.Threading.Tasks;
 
+[assembly: CollectionBehavior(DisableTestParallelization = true)]
 namespace RSG.Tests {
     public class PromiseTests {
         [Fact]
